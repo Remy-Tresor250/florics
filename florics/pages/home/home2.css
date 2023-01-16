@@ -1,0 +1,868 @@
+/* -------------- kit-1 ------------- */
+
+#kit-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45rem;
+    padding: 20px 70px;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#kit-1 .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    position: relative;
+}
+#kit-1 .title::after{
+    content: '';
+    width: 7rem;
+    height: 0.3rem;
+    background: linear-gradient(45deg,#0ed28d,#1072aa);
+    border-radius: 10px;
+}
+#kit-1 h5{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 16px;
+    color: #11045b;
+    font-weight: 300;
+}
+#kit-1 .descrip-kit {
+    display: none;
+    padding: 30px 60px;
+    width: 50rem;
+    background: linear-gradient(35deg,#061161,#690754);
+    border-radius: 20px;
+    height: 20rem;
+    margin-top: 5rem;
+    align-self: flex-end;
+    position: relative;
+    z-index: 10;
+    box-shadow: 30px 40px 30px rgba(0, 0, 0, 0.3);
+}
+#kit-1 .descrip-kit.anim-kit1{
+    display: flex;
+    flex-direction: column;
+    animation: kit1 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes kit1 {
+    0% {right: -10rem; opacity: 0.3; transform: translateY(-3rem);}
+    100% {right: 0; opacity: 1; transform: translateY(0);}
+}
+#kit-1 .descrip-kit .shoe-1 {
+    display: none;
+    width: 17.5rem;
+    height: 17.5rem;
+    position: absolute;
+    top: 1rem;
+    left: -19rem;
+    z-index: 9;
+}
+#kit-1 .descrip-kit .shoe-1.anim-shoe1{
+    display: flex;
+    animation: shoe1 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes shoe1 {
+    0% {left: -27rem; opacity: 0.5; transform: translateY(-6rem);}
+    100% {left: -20rem; opacity: 1; transform: translateY(0);}
+}
+#kit-1 .descrip-kit h3 {
+    display: none;
+    flex-direction: row;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #c4cbc9;
+    margin-bottom: 2rem;
+    position: relative;
+}
+#kit-1 .descrip-kit .des-kit1-title.anim-title{
+    display: flex;
+    animation: title 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes title {
+    0% {left: -6rem; opacity: 0.5;}
+    100% {left: 0; opacity: 1;}
+}
+#kit-1 .descrip-kit h3::before{
+    content: '';
+    width: 0.3rem;
+    height: 3.7rem;
+    position: absolute;
+    background: linear-gradient(35deg,#136ecf,#1dae85);
+    top: -0.5rem;
+    left: -1rem;
+    border-radius: 10px;
+}
+#kit-1 .descrip-kit .des-kit1-content{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 17px;
+    margin-bottom: 2.5rem;
+}
+
+#kit-1 .descrip-kit h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #52f0b9;
+    font-size: 15px;
+    position: relative;
+}
+#kit-1 .descrip-kit .confirm1.anim-confirm1{
+    display: flex;
+    animation: confirm1 5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes confirm1 {
+    0% {bottom: -7rem; opacity: 0.4;}
+    100% {bottom: -2rem; opacity: 1;}
+}
+#kit-1 .descrip-kit h4 img{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 9.5rem;
+}
+#kit-1 .descrip-kit .kit1-circle1 {
+    display: none;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 3rem;
+    left: -8rem;
+    background: linear-gradient(35deg,#0dab5f,#09296c);
+    opacity: 0.5;
+    z-index: 5;
+}
+#kit-1 .descrip-kit .kit1-circle1.anim-circle1{
+    display: flex;
+    animation: kit1circle1 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit1circle1 {
+    0% {left: -12rem; opacity: 1; transform: translateY(-4rem);}
+    100% {left: 7; opacity: 0.5; transform: translateY(0);}
+}
+
+#kit-1 .descrip-kit .kit1-circle2 {
+    display: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 8rem;
+    left: -23rem;
+    background: linear-gradient(35deg,#07502d,#37096c);
+    opacity: 0.5;
+    z-index: 5;
+}
+#kit-1 .descrip-kit .kit1-circle2.anim-circle2{
+    display: flex;
+    animation: kit1circle2 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit1circle2 {
+    0% {top: 15rem; left: -10rem; opacity: 0.2;}
+    25% {top: 15rem; left: -23rem; opacity: 0.3;}
+    50% {top: 8rem; left: -10rem; opacity: 0.3;}
+    75% {top: 8rem; left: -20rem; opacity: 0.4;}
+    100% {top: 8rem; left: -23rem;}
+}
+#kit-1 .descrip-kit .kit1-circle3 {
+    display: none;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    left: -18rem;
+    background: linear-gradient(35deg,#0bc3d0,#cb0946);
+    opacity: 0.5;
+    z-index: 5;
+}
+#kit-1 .descrip-kit .kit1-circle3.anim-circle3 {
+    display: flex;
+    animation: kit1circle3 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit1circle3 {
+    0% {top: -10rem; opacity: 0.2; transform: translateX(0); transform: rotateX(0deg);}
+    50% {top: 0; opacity: 0.3; transform: translateX(-10rem); transform: rotateX(180deg);}
+    100% {top: 10rem; transform: translateX(0); transform: rotateX(95deg);}
+}
+
+@media (max-width: 1270px) {
+    #kit-1{
+        width: 1270px;
+    }
+}
+@media (min-width: 1480px) {
+    #kit-1 .descrip-kit{
+        width: 65rem;
+    }
+    #advice2 .notification-1{
+        width: 65rem;
+    }
+    #kits-2 .descrip-kit2{
+        width: 65rem;
+    }
+}
+
+/* -------------- requirements -------------- */
+
+#requirements{
+    width: 100%;
+    height: 67rem;
+    padding: 20px 60px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+#requirements .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 2rem;
+    color: #14031f;
+}
+#requirements .title::after{
+    content: '';
+    width: 7rem;
+    height: 0.3rem;
+    background: linear-gradient(45deg,#0ed28d,#1072aa);
+    border-radius: 10px;
+    margin-top: 0.4rem;
+}
+#requirements h5{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+#requirements .requirement{
+    padding: 10px 70px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-template-rows: repeat(2,minmax(200px,1fr));
+    gap: 1rem;
+}
+#requirements .requirement .require{
+    background: #c9cad1;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+#requirements .requirement .require:nth-of-type(1){
+    display: none;
+    background: linear-gradient(45deg,#0eb2e8,#1b18c3);
+    grid-column: 1;
+    grid-row: 1;
+    position: absolute;
+    top: 17rem;
+    left: 0.6rem;
+    width: 20rem;
+}
+#requirements .requirement .require:nth-of-type(1).anim-patience{
+    display: flex;
+    flex-direction: column;
+    animation: patience 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes patience {
+    0% {top: -5rem; opacity: 0.2;}
+    100% {top: 17rem; opacity: 1;}
+}
+#requirements .requirement .require:nth-of-type(2){
+    display: none;
+    background: linear-gradient(45deg,#020f47,#c1098a);
+    grid-column: 2;
+    grid-row: 1;
+}
+#requirements .requirement .require:nth-of-type(2).anim-commitment{
+    display: flex;
+    flex-direction: column;
+    animation: commitment 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes commitment {
+    0% {top: 5rem; opacity: 0.3;}
+    100% {top: 0; opacity: 1;}
+}
+#requirements .requirement .require:nth-of-type(3){
+    display: none;
+    background: linear-gradient(45deg,#057062,#03144c);
+    grid-column: 3;
+    grid-row: 1;
+    position: absolute;
+    top: 8rem;
+    right: 5rem;
+}
+#requirements .requirement .require:nth-of-type(3).anim-time{
+    display: flex;
+    flex-direction: column;
+    animation: time 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes time {
+    0% {top: 17rem; opacity: 0.5;}
+    100% {top: 8rem; opacity: 1;}
+}
+#requirements .requirement .require:nth-of-type(4){
+    display: none;
+    background: linear-gradient(45deg,#a807ba,#036c31);
+    grid-column: 2;
+    grid-row: 2;
+}
+#requirements .requirement .require:nth-of-type(4).anim-diet{
+    display: flex;
+    flex-direction: column;
+    animation: diet 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes diet {
+    0%{bottom: 6rem; opacity: 0.5;}
+    100% {bottom: 0; opacity: 1;}
+}
+#requirements .requirement .require img{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 15px;
+}
+#requirements .requirement .require h3{
+    display: flex;
+    flex-direction: row;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #c2f0e5;
+    margin-bottom: 1rem;
+    position: relative;
+}
+#requirements .requirement .require h3::after{
+    position: absolute;
+    content: '';
+    width: 0.3rem;
+    height: 2.5rem;
+    background: linear-gradient(45deg,#10b56e,#093476);
+    top: -0.4rem;
+    right: 7rem;
+    border-radius: 10px;
+}
+#requirements .requirement .require p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+@media (max-width: 1265px) {
+    #requirements{
+        width: 1265px;
+    }
+}
+@media (min-width: 1295px) {
+    #requirements .requirement .require:nth-of-type(1){
+        width: 350px;
+    }
+}
+
+/* ------------------- advice2 --------------- */
+
+#advice2 {
+    width: 100%;
+    height: 40rem;
+    padding: 20px 70px;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#advice2 .title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    color: #032a1f;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+#advice2 .title::after{
+    content: '';
+    width: 7rem;
+    height: 0.3rem;
+    background: linear-gradient(45deg,#0ed28d,#1072aa);
+    border-radius: 10px;
+    margin-top: 0.4rem;
+}
+#advice2 h5{
+    font-size: 17px;
+    color: #030334;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#advice2 .notification-1{
+    display: none;
+    width: 50rem;
+    height: 20rem;
+    padding: 20px 40px;
+    background: linear-gradient(35deg,#810672,#066d46);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 30px 40px 30px rgba(0, 0, 0, 0.3);
+    z-index: 9;
+}
+#advice2 .notification-1.anim-notif1{
+    display: flex;
+    flex-direction: column;
+    animation: notif1 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes notif1 {
+    0% {left: -12rem; opacity: 0.4;}
+    100% {left: 0; opacity: 1;}
+}
+#advice2 .notification-1 .notif-img{
+    display: none;
+    width: 25rem;
+    height: 14rem;
+    border-radius: 15px;
+    position: absolute;
+    right: -10rem;
+    top: 12rem;
+    z-index: 12;
+}
+#advice2 .notification-1 .notif-img.anim-notif-img{
+    display: flex;
+    flex-direction: column;
+    animation: notif-img 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes notif-img {
+    0% {right: -20rem; opacity: 0.4; transform: translateY(0);}
+    50% {right: -15rem; opacity: 0.6; transform: translateY(-7rem);}
+    100% {right: -10rem; opacity: 1; transform: translateY(0);}
+}
+#advice2 .notification-1 h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    color: #c0b9b9;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    position: relative;
+}
+#advice2 .notification-1 .notif-title.anim-notif-title{
+    display: flex;
+    animation: notif-title 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes notif-title {
+    0% {right: -10rem; opacity: 0.4;}
+    100% {right: 0; opacity: 1;}
+}
+#advice2 .notification-1 h3::before{
+    content: '';
+    width: 0.3rem;
+    height: 3rem;
+    position: absolute;
+    left: -0.7rem;
+    top: -0.2rem;
+    background: linear-gradient(45deg,#07ad76,#133bc0);
+    border-radius: 10px;
+}
+#advice2 .notification-1 p{
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+}
+#advice2 .notification-1 .notif-content.anim-notif-content{
+    display: flex;
+    animation: notif-content 4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes notif-content {
+    0% {right: -15rem; opacity: 0.4;}
+    100% {right: 0; opacity: 1;}
+}
+#advice2 .notification-1 h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #021d14;
+}
+#advice2 .notification-1 .notif1-circle1{
+    display: none;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(120deg,#cc6d08,#d0e10e);
+    opacity: 0.5;
+    position: absolute;
+    top: 4rem;
+    right: -8rem;
+    z-index: 10;
+}
+#advice2 .notification-1 .notif1-circle1.anim-notif-circle1{
+    display: flex;
+    animation: notif-circle1 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes notif-circle1 {
+    0% {right: -17rem; opacity: 0.3; transform: translateY(-5rem);}
+    100% {right: -8rem; opacity: 0.5; transform: translateY(0);}
+}
+#advice2 .notification-1 .notif1-circle2{
+    display: none;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: linear-gradient(120deg,#04a148,#35aeeb);
+    opacity: 0.5;
+    position: absolute;
+    top: 15rem;
+    right: -14rem;
+    z-index: 10;
+}
+#advice2 .notification-1 .notif1-circle2.anim-notif-circle2{
+    display: flex;
+    animation: notif-circle2 3.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes notif-circle2 {
+    0% {top: -18rem; right: -24rem; opacity: 0.2;}
+    25% {top: -18rem; right: -14rem; opacity: 0.3;}
+    50% {top: -8rem; right: -20rem; opacity: 0.3;}
+    75% {top: 15rem; right: -20rem; opacity: 0.4;}
+    100% {top: 15rem; right: -14rem;}
+}
+#advice2 .notification-1 .notif1-circle3{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient(120deg,#09aaa2,#c30dc6);
+    opacity: 0.5;
+    position: absolute;
+    top: 15rem;
+    right: 13rem;
+    z-index: 1;
+}
+#advice2 .notification-1 .notif1-circle3.anim-notif-circle3{
+    display: flex;
+    animation: notif-circle3 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes notif-circle3 {
+    0% {right: 28rem; opacity: 0.3;}
+    100% {right: 13rem;}
+}
+#advice2 .notification-1 .btn{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 9rem;
+    height: 2.4rem;
+    background: #21b79b;
+    padding: 6.5px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#advice2 .notification-1 .btn.anim-notif-btn{
+    display: flex;
+    animation: notif-btn 5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes notif-btn {
+    0% {opacity: 0.4; transform: translateX(0);}
+    50% {opacity: 0.6; transform: translateX(6rem);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+#advice2 .notification-1 .btn:hover{
+    background: #06625f;
+    transition: 0.5s ease-out;
+
+}
+#advice2 .notification-1 .btn a{
+    text-decoration: none;
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+@media (max-width: 1275px) {
+    #advice2{
+        width: 1275px;
+    }
+}
+@media (min-width: 1532px) {
+    #advice2 .notification-1 {
+        width: 63rem;
+    }
+}
+
+
+/* ------------- kits ---------------- */
+
+#kits-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100%;
+    height: 45rem;
+    position: relative;
+    padding: 20px 70px;
+    margin-bottom: 3rem;
+}
+#kits-2 .title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 34px;
+    color: #05051c;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+#kits-2 .title::after{
+    content: '';
+    width: 7rem;
+    height: 0.3rem;
+    background: linear-gradient(45deg,#0ed28d,#1072aa);
+    border-radius: 10px;
+    margin-top: 0.4rem;
+}
+#kits-2 h5{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 17px;
+    color: #021209;
+    margin-bottom: 2rem;
+}
+#kits-2 .descrip-kit2{
+    display: none;
+    width: 45rem;
+    height: 20rem;
+    background: linear-gradient(35deg,#0ee67e,#0949a3);
+    border-radius: 20px;
+    padding: 20px 50px;
+    position: relative;
+    align-self: flex-end;
+    z-index: 10;
+}
+#kits-2 .descrip-kit2.anim-kit2{
+    flex-direction: column;
+    display: flex;
+    animation: kit2 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit2 {
+    0% {right: -10rem;opacity: 0.4;}
+    100% {right: 0rem; opacity: 1;}
+}
+#kits-2 .descrip-kit2 .kit2-img{
+    display: none;
+    width: 23rem;
+    height: 20rem;
+    border-radius: 15px;
+    position: absolute;
+    left: -25rem;
+    top: 5rem;
+    z-index: 9;
+}
+#kits-2 .descrip-kit2 .kit2-img.anim-kit2-img{
+    display: flex;
+    animation: kit2-img 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit2-img {
+    0% {left: -35rem; opacity: 0.4; transform: translateY(0);}
+    50% {left: -30rem; opacity: 0.7; transform: translateY(8rem);}
+    100% {left: -25rem; transform: translateY(0);}
+}
+#kits-2 .descrip-kit2 h3{
+    display: none;
+    margin-top: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #eff0f5;
+    margin-bottom: 2rem;
+    position: relative;
+}
+#kits-2 .descrip-kit2 .des-kit2-title.anim-kit2-title{
+    display: flex;
+    animation: kit2-title 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit2-title {
+    0% {left: 18rem; opacity: 0.4;}
+    100% {left: 0; opacity: 1;}
+}
+#kits-2 .descrip-kit2 h3::before{
+    content: '';
+    width: 0.3rem;
+    height: 3rem;
+    position: absolute;
+    left: -0.8rem;
+    top: 0.1rem;
+    background: linear-gradient(45deg,#1526a7,#b8089a);
+    border-radius: 10px;
+}
+#kits-2 .descrip-kit2 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+    margin-left: 1rem;
+}
+#kits-2 .descrip-kit2 h6{
+    font-size: 17px;
+    margin-top: 1.5rem;
+    font-weight: 200;
+    color: #060643;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+#kits-2 .descrip-kit2 .btn{
+    display: none;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 5px;
+    background: #cac70e;
+    padding: 6px 28px;
+    cursor: pointer;
+}
+#kits-2 .descrip-kit2 .kit2-btn.anim-kit2-btn{
+    display: flex;
+    animation: kit2-btn 5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit2-btn {
+    0%{transform: translateX(12rem); opacity: 0.4;}
+    100% {transform: translateX(0);}
+}
+#kits-2 .descrip-kit2 .btn:hover{
+    background: #0f7fdb;
+    transition: 0.5s ease-out;
+}
+#kits-2 .descrip-kit2 .btn a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+#kits-2 .descrip-kit2 .kit2-circle1{
+    display: none;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background: linear-gradient(49deg,#035937,#042973);
+    opacity: 0.5;
+    position: absolute;
+    top: 12rem;
+    left: -9rem;
+    z-index: 7;
+}
+#kits-2 .descrip-kit2 .kit2-circle1.anim-kit2-circle1{
+    display: flex;
+    animation: kit2-circle1 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit2-circle1 {
+    0% {left: 18rem;opacity: 0.2; transform: translateY(-4rem);}
+    100% {left: -9rem; transform: translateY(0);}
+}
+#kits-2 .descrip-kit2 .kit2-circle2{
+    display: none;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#066835,#b20896);
+    opacity: 0.4;
+    position: absolute;
+    top: 2rem;
+    left: -6rem;
+}
+#kits-2 .descrip-kit2 .kit2-circle2.anim-kit2-circle2{
+    display: flex;
+    animation: kit2-circle2 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit2-circle2 {
+    0% {left: -26rem; opacity: 0.3; transform: translateY(-3rem);}
+    100% {left: -6rem; opacity: 0.5; transform: translateY(0);}
+}
+#kits-2 .descrip-kit2 .kit2-circle3{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#042441,#097246);
+    opacity: 0.4;
+    position: absolute;
+    top: 1.5rem;
+    left: -28rem;
+}
+#kits-2 .descrip-kit2 .kit2-circle3.anim-kit2-circle3{
+    display: flex;
+    animation: kit2-circle3 4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes kit2-circle3 {
+    0% {top: -12rem; left: -15rem; opacity: 0.2;}
+    25% {top: -12rem; left: -28rem; opacity: 0.3;}
+    50% {top: -5rem; left: -18rem; opacity: 0.3;}
+    75% {top: 1.5rem; left: -15rem; opacity: 0.4; transform: rotateY(150deg);}
+    100% {top: 1.5rem; left: -28rem; transform: rotateX(0);}
+}
+
+@media (max-width: 1270px) {
+    #kits-2{
+        width: 1270px;
+    }
+}
+@media (min-width: 1532px) {
+    #kits-2 .descrip-kit2{
+        width: 63rem;
+    }
+}
